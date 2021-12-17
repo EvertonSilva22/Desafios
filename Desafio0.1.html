@@ -9,14 +9,17 @@
         body{
             background-color: black;
         }
-        h1{
+        h1::after{
+                content: 'Desafio do Sol';
                 margin-top: 0;
                 margin-bottom: 200px;
                 text-align: center;
                 background-color: yellow;
                 color: black;
+                border-radius: 10%;
+                padding: 1%;
         }
-        a{
+        div{
             border-radius: 50%;
             background-color: rgba(255, 255, 0, 0.486);
             padding: 10%;
@@ -25,16 +28,50 @@
             border-color: yellow;
             margin-left: 500px;
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 2em;
+            font-size: 2.5em;
             color: white;
-            transform: rotate(100deg);
+            width: 85px;
 
+        }
+        div::before {
+            content: ')';
+            width: 30px;
+            height: 40px;
+            top: 400px;
+            left: 53.5%;
+            margin-left: -20px;
+            transform: rotate(90deg); 
+            position: absolute;
+            color: red;
+            font-size: 2em;
+            font-family: serif;
+        }
+
+        div::after {
+            content: '0   0';
+            color: #fff;
+            width: 100px;
+            height: 40px;
+            top: 350px;
+            right: 46%;
+            margin-right: -40px;
+            font-size: 1.5em;  
+            font-family: serif;
+        }
+        p::after{
+            content: 'Desafio feito por Rafael Gomes. GitHub: @ehurafa';
+            color: black;
+            background-color: yellow;
+            padding: 2%;
+            border-radius: 10px;
+            float: right;
         }
     </style>
 </head>
 <body> 
-    <h1>Desafio do Sol</h1>
-    <a>0 P 0</a> 
+    <h1></h1>
+    <div></div>
+    <p></p> 
     
 </body>
 </html>
